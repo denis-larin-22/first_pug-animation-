@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -411,7 +412,7 @@ table {
 
 .bcg-girl {
   position: absolute;
-  top: 67%;
+  top: 73%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -511,9 +512,21 @@ table {
   transform: scale(1.2);
 }
 .header__button {
+  display: inline-block;
   padding: 14px 38px;
   border-radius: 34px;
-  background-color: #131416;
+  background: #131416;
+  border: 1px solid #131416;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.header__button:hover {
+  background: radial-gradient(circle, rgb(221, 59, 245) 0%, rgb(255, 126, 128) 100%);
+}
+.header__button:hover .header__button_text {
+  transform: rotate(360deg);
+  color: #131416;
 }
 .header__button_text {
   font-weight: 500;
@@ -521,4 +534,70 @@ table {
   line-height: 22px;
   color: #FFFFFF;
   font-family: "Manrope", sans-serif;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.h1 {
+  position: absolute;
+  top: 11%;
+  left: 29%;
+  max-width: 630px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 125px;
+  font-family: "Manrope", sans-serif;
+}
+.h1_span {
+  color: #4FC27E;
+  font-weight: 400;
+}
+
+.card {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  background: #F1F6F6;
+  border: 1px solid #F9FEFE;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  padding: 65px 21px 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  gap: 6px 0;
+}
+.card__img {
+  position: absolute;
+  top: -20%;
+}
+.card__city {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+.card__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.card__location {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #999999;
+}
+.card__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FF7E88;
+  padding: 8px 29px 8px 31px;
+  border-radius: 36px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

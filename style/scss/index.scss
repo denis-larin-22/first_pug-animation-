@@ -1,6 +1,7 @@
 @import "./reser";
 @import "./animation";
 @import "./common";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 // font
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
@@ -173,7 +174,7 @@
 }
 .bcg-girl {
     position: absolute;
-    top: 67%;
+    top: 73%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -252,13 +253,83 @@
         }
     }
     &__button {
+        display: inline-block;
         padding: 14px 38px;
         border-radius: 34px;
-        background-color: #131416;
+        background: #131416;
+        border: 1px solid #131416;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover {
+            background: radial-gradient(circle, rgba(221,59,245,1) 0%, rgba(255,126,128,1) 100%);
+            // transform: scale(1.05)
+        }
+        &:hover .header__button_text {
+            transform: rotate(360deg);
+            color: #131416;
+            // @include font-setting (500, 18px, 25px);
+        }
         &_text {
             @include font-setting (500, 16px, 22px);
             color: #FFFFFF;
             font-family: 'Manrope', sans-serif;
+            display: inline-block;
+            transition: all 0.5s ease;
         }
+    }
+}
+
+.h1 {
+    position: absolute;
+    top: 11%;
+    left: 29%;
+    max-width: 630px;
+    text-align: center;
+    @include font-setting (700, 100px, 125px);
+    font-family: 'Manrope', sans-serif;
+    &_span {
+        color: #4FC27E;
+        font-weight: 400;
+    }
+}
+
+.card {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    background: #F1F6F6;
+    border: 1px solid #F9FEFE;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    padding: 65px 21px 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 6px 0;
+    &__img {
+        position: absolute;
+        top: -20%;
+    }
+    &__city {
+        @include font-setting (500, 14px, 16px);
+        color: #999999;
+    }
+    &__name {
+        @include font-setting (500, 24px, 28px);
+    }
+    &__location {
+        @include font-setting (500, 16px, 18px);
+        color: #999999;
+    }
+    &__btn {
+        @include font-setting (700, 16px, 19px);
+        color: #FF7E88;
+        padding: 8px 29px 8px 31px;
+        border-radius: 36px;
+        border: 2px solid rgba(0, 0, 0, 0.05);
+        cursor: pointer;
     }
 }
