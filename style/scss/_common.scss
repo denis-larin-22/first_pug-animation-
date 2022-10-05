@@ -1,0 +1,7 @@
+// colors 
+
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}

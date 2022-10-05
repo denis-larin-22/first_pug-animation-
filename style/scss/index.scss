@@ -1,0 +1,264 @@
+@import "./reser";
+@import "./animation";
+@import "./common";
+// font
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #202020;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background-color: #D1DADB;
+    padding: 0 20px;
+    padding-top: 5vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1441px;
+    height: 90vh;
+    background: linear-gradient(103.69deg, #E6EFEE 3.76%, #E2E9DF 93.56%);
+    margin: auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    // -webkit-box-shadow: 0px 58px 126px -19px rgba(0,0,0,0.48);
+    // -moz-box-shadow: 0px 58px 126px -19px rgba(0,0,0,0.48);
+    position: relative;
+    overflow: hidden;
+}
+
+// bcg-elements
+.bcg-crc-1 {
+    display: inline-block;
+    width: 1553px;
+    min-height: 1032px;
+    border: 1px solid rgba(255, 170, 133, 1);
+    border-radius: 50%;
+    transform: rotate(-27.08deg);
+}
+.bcg-crc-2 {
+    display: inline-block;
+    width: 1331px;
+    min-height: 868px;
+    border: 1px solid rgba(115, 228, 160, 1);
+    border-radius: 50%;
+    transform: rotate(-27.08deg);
+    position: absolute;
+    left: 75.71px;
+    top: 97px;
+}
+.bcg-crc-centre {
+    display: inline-block;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: #FFC247;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: or-anim;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.bcg-crc-bottom {
+    display: inline-block;
+    width: 1803px;
+    height: 746px;
+    position: absolute;
+    // left: 0px;
+    // top: 786px;
+    left: -13%;
+    top: 76%;
+    border-radius: 50%;
+    background-color: #202020;
+}
+.bcg-crc-3 {
+    display: inline-block;
+    width: 1803px;
+    height: 818px;
+    border: 1px solid rgba(84, 84, 84, 1);
+    border-radius: 50%;
+    position: absolute;
+    top: 87%;
+    left: -13%;
+}
+.bcg-green-crc-1 {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-color: #4FC27E;
+    border-radius: 50%;
+    position: absolute;
+    left: 73px;
+    top: 628px;
+}
+.bcg-green-crc-2 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #4FC27E;
+    border-radius: 50%;
+    position: absolute;
+    left: 1373px;
+    top: 721px;
+}
+.bcg-white-crc-1 {
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    background: linear-gradient(305.73deg, #FFFFFF -4.29%, rgba(255, 255, 255, 0) 96.27%);
+    border-radius: 50%;
+    position: absolute;
+    left: 119px;
+    top: 258px;
+}
+.bcg-white-crc-2 {
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    background: linear-gradient(305.73deg, #FFFFFF -4.29%, rgba(255, 255, 255, 0) 96.27%);
+    border-radius: 50%;
+    position: absolute;
+    left: 1085px;
+    top: 133px;
+}
+.bcg-orange-crc-1 {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #FFC247;
+    border-radius: 50%;
+    position: absolute;
+    left: 459px;
+    top: 220px;
+}
+.bcg-pink-crc-1 {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #FF5777;
+    border-radius: 50%;
+    position: absolute;
+    left: 1245px;
+    top: 217px;
+}
+.bcg-smile {
+    position: absolute;
+    left: 1110px;
+    top: 226px;
+    &:hover {
+        animation-name: smile-anim;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+}
+.bcg-arrow {
+    position: absolute;
+    left: 1094px;
+    top: 435px;
+}
+.bcg-girl {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.bcg-hi {
+    position: absolute;
+    left: 300px;
+    top: 320px;
+    animation-name: reversal;
+    animation-duration: 3.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.bcg-window {
+    position: absolute;
+    left: 885px;
+    top: 580px;
+    max-width: 378px;
+    background: rgba(134, 132, 132, 0.39);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 90px 50px -32px rgba(32, 32, 32, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 27px 64px 27px 27px;
+    &__rows {
+        display: flex;
+        flex-direction: column;
+        gap: 18px 0;
+        max-width: 172px;
+    }
+    &__row {
+        background: linear-gradient(89.9deg, #FFFFFF -7.46%, rgba(255, 255, 255, 0) 138.55%);
+        border-radius: 15px;
+        height: 18px;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-iteration-count: 2;
+        animation-direction: normal;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        &_1, &_2 {
+            animation-name: row;
+        }
+        &_3 {
+            animation-name: row3;
+        }
+    }
+}
+// site frame
+.header {
+    position: absolute;
+    top: 0;
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    padding: 40px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+    &__list {
+        display: flex;
+        gap: 0px 85px;
+    }
+    &__link {
+        @include font-setting (500, 16px, 22px);
+        display: inline-block;
+        transition: 0.5s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__button {
+        padding: 14px 38px;
+        border-radius: 34px;
+        background-color: #131416;
+        &_text {
+            @include font-setting (500, 16px, 22px);
+            color: #FFFFFF;
+            font-family: 'Manrope', sans-serif;
+        }
+    }
+}
