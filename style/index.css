@@ -264,8 +264,8 @@ table {
   border-radius: 50%;
   transform: rotate(-27.08deg);
   position: absolute;
-  left: 75.71px;
-  top: 97px;
+  top: 100px;
+  left: 76px;
 }
 
 .bcg-crc-centre {
@@ -278,20 +278,8 @@ table {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-animation-name: or-anim;
-          animation-name: or-anim;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: or-anim 10s linear 0s infinite alternate forwards;
+          animation: or-anim 10s linear 0s infinite alternate forwards;
 }
 
 .bcg-crc-bottom {
@@ -299,8 +287,8 @@ table {
   width: 1803px;
   height: 746px;
   position: absolute;
-  left: -13%;
   top: 76%;
+  left: -13%;
   border-radius: 50%;
   background-color: #202020;
 }
@@ -323,8 +311,8 @@ table {
   background-color: #4FC27E;
   border-radius: 50%;
   position: absolute;
-  left: 73px;
   top: 628px;
+  left: 73px;
 }
 
 .bcg-green-crc-2 {
@@ -334,8 +322,8 @@ table {
   background-color: #4FC27E;
   border-radius: 50%;
   position: absolute;
-  left: 1373px;
   top: 721px;
+  left: 1373px;
 }
 
 .bcg-white-crc-1 {
@@ -345,8 +333,8 @@ table {
   background: linear-gradient(305.73deg, #FFFFFF -4.29%, rgba(255, 255, 255, 0) 96.27%);
   border-radius: 50%;
   position: absolute;
-  left: 119px;
   top: 258px;
+  left: 119px;
 }
 
 .bcg-white-crc-2 {
@@ -356,8 +344,8 @@ table {
   background: linear-gradient(305.73deg, #FFFFFF -4.29%, rgba(255, 255, 255, 0) 96.27%);
   border-radius: 50%;
   position: absolute;
-  left: 1085px;
   top: 133px;
+  left: 1085px;
 }
 
 .bcg-orange-crc-1 {
@@ -367,8 +355,8 @@ table {
   background: #FFC247;
   border-radius: 50%;
   position: absolute;
-  left: 459px;
   top: 220px;
+  left: 459px;
 }
 
 .bcg-pink-crc-1 {
@@ -378,36 +366,24 @@ table {
   background: #FF5777;
   border-radius: 50%;
   position: absolute;
-  left: 1245px;
   top: 217px;
+  left: 1245px;
 }
 
 .bcg-smile {
   position: absolute;
-  left: 1110px;
   top: 226px;
+  left: 1110px;
 }
 .bcg-smile:hover {
-  -webkit-animation-name: smile-anim;
-          animation-name: smile-anim;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: smile-anim 2s linear 0s infinite alternate forwards;
+          animation: smile-anim 2s linear 0s infinite alternate forwards;
 }
 
 .bcg-arrow {
   position: absolute;
-  left: 1094px;
   top: 435px;
+  left: 1094px;
 }
 
 .bcg-girl {
@@ -420,28 +396,16 @@ table {
 
 .bcg-hi {
   position: absolute;
-  left: 300px;
   top: 320px;
-  -webkit-animation-name: reversal;
-          animation-name: reversal;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  left: 300px;
+  -webkit-animation: reversal 3.5s linear 0s infinite normal forwards;
+          animation: reversal 3.5s linear 0s infinite normal forwards;
 }
 
 .bcg-window {
   position: absolute;
-  left: 885px;
   top: 580px;
+  left: 885px;
   max-width: 378px;
   background: rgba(134, 132, 132, 0.39);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -488,7 +452,8 @@ table {
 
 .header {
   position: absolute;
-  top: 0;
+  top: 0px;
+  left: 0px;
   font-family: "Manrope", sans-serif;
   width: 100%;
   padding: 40px 50px 0px 50px;

@@ -1,0 +1,14 @@
+// mixins
+@mixin position-a ($t, $l) {
+    position: absolute;
+    top: $t;
+    left: $l;
+}
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}
+
+// variables
+$br: 50%;

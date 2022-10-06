@@ -1,6 +1,6 @@
 @import "./reser";
 @import "./animation";
-@import "./common";
+@import "./tools";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 // font
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
@@ -39,7 +39,7 @@
     width: 1553px;
     min-height: 1032px;
     border: 1px solid rgba(255, 170, 133, 1);
-    border-radius: 50%;
+    border-radius: $br;
     transform: rotate(-27.08deg);
 }
 .bcg-crc-2 {
@@ -47,40 +47,26 @@
     width: 1331px;
     min-height: 868px;
     border: 1px solid rgba(115, 228, 160, 1);
-    border-radius: 50%;
+    border-radius: $br;
     transform: rotate(-27.08deg);
-    position: absolute;
-    left: 75.71px;
-    top: 97px;
+    @include position-a (100px, 76px);
 }
 .bcg-crc-centre {
     display: inline-block;
     width: 445px;
     height: 445px;
-    border-radius: 50%;
+    border-radius: $br;
     background-color: #FFC247;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include position-a (50%, 50%);
     transform: translate(-50%, -50%);
-    animation-name: or-anim;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+    animation: or-anim 10s linear 0s infinite alternate forwards;
 }
 .bcg-crc-bottom {
     display: inline-block;
     width: 1803px;
     height: 746px;
-    position: absolute;
-    // left: 0px;
-    // top: 786px;
-    left: -13%;
-    top: 76%;
-    border-radius: 50%;
+    @include position-a (76%, -13%);
+    border-radius: $br;
     background-color: #202020;
 }
 .bcg-crc-3 {
@@ -88,113 +74,77 @@
     width: 1803px;
     height: 818px;
     border: 1px solid rgba(84, 84, 84, 1);
-    border-radius: 50%;
-    position: absolute;
-    top: 87%;
-    left: -13%;
+    border-radius: $br;
+    @include position-a (87%, -13%);
 }
 .bcg-green-crc-1 {
     display: inline-block;
     width: 29px;
     height: 29px;
     background-color: #4FC27E;
-    border-radius: 50%;
-    position: absolute;
-    left: 73px;
-    top: 628px;
+    border-radius: $br;
+    @include position-a (628px, 73px);
 }
 .bcg-green-crc-2 {
     display: inline-block;
     width: 24px;
     height: 24px;
     background-color: #4FC27E;
-    border-radius: 50%;
-    position: absolute;
-    left: 1373px;
-    top: 721px;
+    border-radius: $br;
+    @include position-a (721px, 1373px);
 }
 .bcg-white-crc-1 {
     display: inline-block;
     width: 41px;
     height: 41px;
     background: linear-gradient(305.73deg, #FFFFFF -4.29%, rgba(255, 255, 255, 0) 96.27%);
-    border-radius: 50%;
-    position: absolute;
-    left: 119px;
-    top: 258px;
+    border-radius: $br;
+    @include position-a (258px, 119px);
 }
 .bcg-white-crc-2 {
     display: inline-block;
     width: 61px;
     height: 61px;
     background: linear-gradient(305.73deg, #FFFFFF -4.29%, rgba(255, 255, 255, 0) 96.27%);
-    border-radius: 50%;
-    position: absolute;
-    left: 1085px;
-    top: 133px;
+    border-radius: $br;
+    @include position-a (133px, 1085px);
 }
 .bcg-orange-crc-1 {
     display: inline-block;
     width: 14px;
     height: 14px;
     background: #FFC247;
-    border-radius: 50%;
-    position: absolute;
-    left: 459px;
-    top: 220px;
+    border-radius: $br;
+    @include position-a (220px, 459px);
 }
 .bcg-pink-crc-1 {
     display: inline-block;
     width: 14px;
     height: 14px;
     background: #FF5777;
-    border-radius: 50%;
-    position: absolute;
-    left: 1245px;
-    top: 217px;
+    border-radius: $br;
+    @include position-a (217px, 1245px);
 }
 .bcg-smile {
-    position: absolute;
-    left: 1110px;
-    top: 226px;
+    @include position-a (226px, 1110px);
     &:hover {
-        animation-name: smile-anim;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
+        animation: smile-anim 2s linear 0s infinite alternate forwards;
     }
 }
 .bcg-arrow {
-    position: absolute;
-    left: 1094px;
-    top: 435px;
+    @include position-a (435px, 1094px);
 }
 .bcg-girl {
-    position: absolute;
-    top: 73%;
-    left: 50%;
+    @include position-a (73%, 50%);
     transform: translate(-50%, -50%);
     z-index: 10;
 }
 .bcg-hi {
-    position: absolute;
-    left: 300px;
-    top: 320px;
-    animation-name: reversal;
-    animation-duration: 3.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+    @include position-a (320px, 300px);
+    animation: reversal 3.5s linear 0s infinite normal forwards;
 }
 .bcg-window {
-    position: absolute;
-    left: 885px;
-    top: 580px;
+    @include position-a (580px, 885px);
     max-width: 378px;
     background: rgba(134, 132, 132, 0.39);
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -231,8 +181,7 @@
 }
 // site frame
 .header {
-    position: absolute;
-    top: 0;
+    @include position-a (0px, 0px);
     font-family: 'Manrope', sans-serif;
     width: 100%;
     padding: 40px 50px 0px 50px;
@@ -263,12 +212,10 @@
         overflow: hidden;
         &:hover {
             background: radial-gradient(circle, rgba(221,59,245,1) 0%, rgba(255,126,128,1) 100%);
-            // transform: scale(1.05)
         }
         &:hover .header__button_text {
             transform: rotate(360deg);
             color: #131416;
-            // @include font-setting (500, 18px, 25px);
         }
         &_text {
             @include font-setting (500, 16px, 22px);
@@ -281,9 +228,7 @@
 }
 
 .h1 {
-    position: absolute;
-    top: 11%;
-    left: 29%;
+    @include position-a (11%, 29%);
     max-width: 630px;
     text-align: center;
     @include font-setting (700, 100px, 125px);
@@ -295,9 +240,7 @@
 }
 
 .card {
-    position: absolute;
-    top: 60%;
-    left: 15%;
+    @include position-a (60%, 15%);
     background: #F1F6F6;
     border: 1px solid #F9FEFE;
     border-radius: 30px;
